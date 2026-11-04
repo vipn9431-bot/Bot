@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    border-color: rgb(30 41 59 / 0.7);
+  }
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* ================= THEME CONTRAST MODES (Dark / Midnight / Cyber) ================= */
+:root[data-theme="dark"] {
+  --bg-main: #080a10;
+  --bg-card: #0d1017;
+  --border-card: rgba(51, 65, 85, 0.7);
+  --accent-glow: rgba(225, 29, 72, 0.15);
+}
+
+:root[data-theme="midnight"] {
+  --bg-main: #040614;
+  --bg-card: #090e24;
+  --border-card: rgba(99, 102, 241, 0.35);
+  --accent-glow: rgba(129, 140, 248, 0.2);
+}
+
+:root[data-theme="cyber"] {
+  --bg-main: #000000;
+  --bg-card: #040812;
+  --border-card: rgba(0, 240, 255, 0.4);
+  --accent-glow: rgba(0, 240, 255, 0.25);
+}
+
+body.theme-dark {
+  background-color: #080a10;
+}
+
+body.theme-midnight {
+  background-color: #040614;
+  background-image: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 60%);
+}
+
+body.theme-cyber {
+  background-color: #000000;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 0, 85, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom sleek scrollbar for dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090b10;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2533;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e11d48;
+}
+
+/* Cyber mesh and dark glow styles */
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.radar-glow {
+  background: radial-gradient(circle, rgba(225, 29, 72, 0.12) 0%, rgba(15, 23, 42, 0) 70%);
+}

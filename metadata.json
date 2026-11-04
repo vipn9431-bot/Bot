@@ -1,0 +1,6 @@
+{
+  "name": "M7R - Wick-Inspired Discord Security Dashboard",
+  "description": "لوحة تحكم وبوت حماية متطور مستوحى من Wick Bot مع أنظمة Anti-Nuke و Anti-Spam وتذاكر Ghost Store وتقديمات ونظام 24/7",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

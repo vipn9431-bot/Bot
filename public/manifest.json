@@ -1,0 +1,10 @@
+{
+  "name": "M7R & KeyCrusher Bot Dashboard",
+  "short_name": "M7R Bot",
+  "description": "لوحة تحكم وبوت حماية وتذاكر وأذكار وتخطي روابط KeyCrusher M7R 24/7",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#e11d48",
+  "orientation": "portrait-primary"
+}
